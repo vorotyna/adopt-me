@@ -11,7 +11,13 @@
     <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
     <script>
-      // your code goes here
+      const App = () => {
+        return React.createElement(
+          "div",
+          {},
+          React.createElement("h1", {}, "Adopt Me!")
+        );
+      };
     </script>
   </body>
 </html>
