@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"];
+const ANIMALS = ["Bird", "Cat", "Dog", "Rabbit", "Reptile"];
 
 const SearchParams = () => {
   const [location, setLocation] = useState("");
@@ -25,11 +25,10 @@ const SearchParams = () => {
             value={animal}
             onChange={(e) => setAnimal(e.target.value)}
           >
-            <option>
-              {ANIMALS.map((animal) => (
-                <option key={animal}> {animal}</option>
-              ))}
-            </option>
+            <option />
+            {ANIMALS.map((animal) => (
+              <option key={animal}>{animal}</option>
+            ))}
           </select>
         </label>
         <button>Submit</button>
