@@ -86,7 +86,7 @@ const SearchParams = () => {
           Breed
           <select
             name="breed"
-            className="mb-5 block w-60"
+            className="mb-5 block w-60 disabled:opacity-50"
             id="breed"
             disabled={breeds.length === 0}
           >
@@ -98,7 +98,9 @@ const SearchParams = () => {
             ))}
           </select>
         </label>
-        <button>Submit</button>
+        <button className="rounded border-none bg-orange-500 px-6 py-2 text-white hover:opacity-50">
+          Submit
+        </button>
       </form>
       <Results pets={pets} />
     </div>
