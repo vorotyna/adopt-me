@@ -11,6 +11,7 @@ const queryClient = new QueryClient({
     queries: {
       staleTime: Infinity,
       cacheTime: Infinity,
+      suspense: true,
     },
   },
 });
@@ -24,7 +25,7 @@ const App = () => {
           <Suspense
             fallback={
               <div className="loading-pane">
-                <h2 className="loader">🐶</h2>
+                <h2 className="loader">🌀</h2>
               </div>
             }
           >
